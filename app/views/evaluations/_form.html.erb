@@ -1,0 +1,41 @@
+<%= form_for(@evaluation) do |f| %>
+  <% if @evaluation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@evaluation.errors.count, "error") %> prohibited this evaluation from being saved:</h2>
+
+      <ul>
+      <% @evaluation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label "Compromiso"%><br>
+    <%= f.number_field :ind_1, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Responsabilidad" %><br>
+    <%= f.number_field :ind_2, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Cooperación" %><br>
+    <%= f.number_field :ind_3, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Orden y calidad" %><br>
+    <%= f.number_field :ind_4, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Mejora contínua" %><br>
+    <%= f.number_field :ind_5, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label "id Empleado"%><br>
+    <%= f.text_field :employee_id, class: 'form-control' %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Crear Evaluación", class: 'btn bnt-primary' %>
+  </div>
+<% end %>

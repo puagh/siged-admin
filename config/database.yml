@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  port: 5432
+  username: siged
+  password: siged@db
+  pool: 5
+
+development:
+  <<: *default
+  database: siged-2_development
+
+test:
+  <<: *default
+  database: siged-2_test
+
+production:
+  <<: *default
+  database: siged-2_production
+  username: siged-1
+  password: <%= ENV['SIGED-1_DATABASE_PASSWORD'] %>

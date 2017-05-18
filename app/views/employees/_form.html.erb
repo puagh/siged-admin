@@ -1,0 +1,89 @@
+<%= form_for(@employee) do |f| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explan ation">
+      <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% @employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :paterno %><br>
+    <%= f.text_field :paterno %>
+  </div>
+  <div class="field">
+    <%= f.label :materno %><br>
+    <%= f.text_field :materno %>
+  </div>
+  <div class="field">
+    <%= f.label 'RFC' %><br>
+    <%= f.text_field :rfc %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nac %><br>
+    <%= f.text_field :fecha_nac %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :calle %><br>
+    <%= f.text_field :calle %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :colonia %><br>
+    <%= f.text_field :colonia %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_p %><br>
+    <%= f.text_field :codigo_p %>
+  </div>
+  <div class="field">
+    <%= f.label :municipio %><br>
+    <%= f.text_field :municipio %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br>
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br>
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario %><br>
+    <%= f.text_field :usuario %>
+  </div>
+  <div class="field">
+    <%= f.label :contra %><br>
+    <%= f.text_field :contra %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

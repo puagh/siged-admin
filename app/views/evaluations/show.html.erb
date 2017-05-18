@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ind 1:</strong>
+  <%= @evaluation.ind_1 %>
+</p>
+
+<p>
+  <strong>Ind 2:</strong>
+  <%= @evaluation.ind_2 %>
+</p>
+
+<p>
+  <strong>Ind 3:</strong>
+  <%= @evaluation.ind_3 %>
+</p>
+
+<p>
+  <strong>Ind 4:</strong>
+  <%= @evaluation.ind_4 %>
+</p>
+
+<p>
+  <strong>Ind 5:</strong>
+  <%= @evaluation.ind_5 %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @evaluation.employee %>
+</p>
+
+<%= link_to 'Edit', edit_evaluation_path(@evaluation) %> |
+<%= link_to 'Back', evaluations_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ind_1: 1
+  ind_2: 1
+  ind_3: 1
+  ind_4: 1
+  ind_5: 1
+  employee_id: 
+
+two:
+  ind_1: 1
+  ind_2: 1
+  ind_3: 1
+  ind_4: 1
+  ind_5: 1
+  employee_id: 

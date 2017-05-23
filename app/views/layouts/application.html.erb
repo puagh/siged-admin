@@ -12,22 +12,16 @@
     <%= render 'shared/header'%>
 
     <% if !flash.empty? %>
-    <div class="alert alert-info">
-      <ul>
-        <% flash.each do |key, value|%>
-          <li><%= value %></li>
-        <% end %>
-      </ul>
-    </div>
+      <div class="alert alert-info">
+        <ul>
+          <% flash.each do |key, value|%>
+            <li><%= value %></li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
 
-
-
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
-  <footer>
-    <div>
-      <small>Desarrollado por DesSoftMex 2017</small>
-    </div>
-  </footer>
 </html>

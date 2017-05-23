@@ -1,97 +1,105 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @employee.nombre %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Datos del usuario</h1>
+      <p>
+        <strong>Nombre:</strong>
+        <%= @employee.nombre %>
+      </p>
 
-<p>
-  <strong>Paterno:</strong>
-  <%= @employee.paterno %>
-</p>
+      <p>
+        <strong>Paterno:</strong>
+        <%= @employee.paterno %>
+      </p>
 
-<p>
-  <strong>Materno:</strong>
-  <%= @employee.materno %>
-</p>
+      <p>
+        <strong>Materno:</strong>
+        <%= @employee.materno %>
+      </p>
 
-<p>
-  <strong>RFC:</strong>
-  <%= @employee.rfc %>
-</p>
+      <p>
+        <strong>RFC:</strong>
+        <%= @employee.rfc %>
+      </p>
 
-<p>
-  <strong>Fecha nac:</strong>
-  <%= @employee.fecha_nac %>
-</p>
+      <p>
+        <strong>Fecha nac:</strong>
+        <%= @employee.fecha_nac %>
+      </p>
 
-<p>
-  <strong>Sexo:</strong>
-  <%= @employee.sexo %>
-</p>
+      <p>
+        <strong>Sexo:</strong>
+        <%= @employee.sexo %>
+      </p>
 
-<p>
-  <strong>Calle:</strong>
-  <%= @employee.calle %>
-</p>
+      <p>
+        <strong>Calle:</strong>
+        <%= @employee.calle %>
+      </p>
 
-<p>
-  <strong>Número:</strong>
-  <%= @employee.numero %>
-</p>
+      <p>
+        <strong>Número:</strong>
+        <%= @employee.numero %>
+      </p>
 
-<p>
-  <strong>Colonia:</strong>
-  <%= @employee.colonia %>
-</p>
+      <p>
+        <strong>Colonia:</strong>
+        <%= @employee.colonia %>
+      </p>
 
-<p>
-  <strong>C.P.:</strong>
-  <%= @employee.codigo_p %>
-</p>
+      <p>
+        <strong>C.P.:</strong>
+        <%= @employee.codigo_p %>
+      </p>
 
-<p>
-  <strong>Municipio:</strong>
-  <%= @employee.municipio %>
-</p>
+      <p>
+        <strong>Municipio:</strong>
+        <%= @employee.municipio %>
+      </p>
 
-<p>
-  <strong>Estado:</strong>
-  <%= @employee.estado %>
-</p>
+      <p>
+        <strong>Estado:</strong>
+        <%= @employee.estado %>
+      </p>
 
-<p>
-  <strong>Tel.:</strong>
-  <%= @employee.tel %>
-</p>
+      <p>
+        <strong>Tel.:</strong>
+        <%= @employee.tel %>
+      </p>
 
-<p>
-  <strong>E-mail:</strong>
-  <%= @employee.email %>
-</p>
+      <p>
+        <strong>E-mail:</strong>
+        <%= @employee.email %>
+      </p>
 
-<p>
-  <strong>Área:</strong>
-  <%= @employee.area %>
-</p>
+      <p>
+        <strong>Área:</strong>
+        <%= @employee.area %>
+      </p>
 
-<p>
-  <strong>Cargo:</strong>
-  <%= @employee.cargo %>
-</p>
+      <p>
+        <strong>Cargo:</strong>
+        <%= @employee.cargo %>
+      </p>
 
-<p>
-  <strong>Usuario:</strong>
-  <%= @employee.usuario %>
-</p>
+      <p>
+        <strong>Usuario:</strong>
+        <%= @employee.usuario %>
+      </p>
 
-<p>
-  <strong>Contraseña:</strong>
-  <%= @employee.contra %>
-</p>
+      <p>
+        <strong>Contraseña:</strong>
+        <%= @employee.contra %>
+      </p>
 
-<%= link_to 'Editar', edit_employee_path(@employee) %> |
-<%= link_to 'Regresar', employees_path %>
-<br>
-<br>
-<br>
+      <%= link_to 'Editar', edit_employee_path(@employee), class: "btn btn-success" %> |
+      <%= link_to 'Regresar', employees_path, class: "btn btn-warning" %>
+      <br>
+      <br>
+      <br>
+
+    </div>
+  </div>
+</div>

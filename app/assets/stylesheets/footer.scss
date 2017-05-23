@@ -1,0 +1,25 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.footer{
+  background-color: #616975;
+  margin-top: 50px;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.footer_gde{
+  background-color: #616975;
+  margin-top: 50px;
+  color: #fff;
+  position: absolute;
+  /*bottom: 0;*/
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}

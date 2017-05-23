@@ -26,9 +26,9 @@
 </p>
 
 <p>
-  <strong>Employee:</strong>
-  <%= @evaluation.employee %>
+  <strong>Empleado:</strong>
+  <%= @evaluation.employee.id %>
 </p>
 
-<%= link_to 'Edit', edit_evaluation_path(@evaluation) %> |
-<%= link_to 'Back', evaluations_path %>
+<%= link_to 'Editar', edit_evaluation_path(@evaluation) %> |
+<%= link_to 'Regresar', evaluations_path %>

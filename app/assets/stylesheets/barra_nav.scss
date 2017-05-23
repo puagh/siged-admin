@@ -1,0 +1,26 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-inverse .navbar-nav > li > a{
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+  color: black;
+  background-color: #35afe3;
+  font-weight: 600;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus{
+  color: black;
+  background-color: #35afe3;
+  font-weight: 600;
+}
+
+.navbar{
+  border-radius: 0;
+}

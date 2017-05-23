@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: siged-2_development
+  database: siged-3_development
 
 test:
   <<: *default
-  database: siged-2_test
+  database: siged-3_test
 
 production:
   <<: *default
-  database: siged-2_production
+  database: siged-3_production
   username: siged-1
   password: <%= ENV['SIGED-1_DATABASE_PASSWORD'] %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'evaluaciones/new'
+
   get 'graphs/new'
 
   resources :evaluations

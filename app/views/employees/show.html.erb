@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <div class="container">
   <div class="row">
@@ -93,9 +93,13 @@
         <strong>Contraseña:</strong>
         <%= @employee.contra %>
       </p>
+      <br>
 
-      <%= link_to 'Editar', edit_employee_path(@employee), class: "btn btn-success" %> |
-      <%= link_to 'Regresar', employees_path, class: "btn btn-warning" %>
+      <%= link_to 'Editar', edit_employee_path(@employee), class: "btn btn-success" %>
+      <%= link_to 'Regresar', employees_path, class: "btn btn-danger" %>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
